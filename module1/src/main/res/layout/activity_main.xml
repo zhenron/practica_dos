@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!--
+        Google Nexus 4
+        4.7 inches
+        768 x 1280 pixels
+        318 ppi
+
+        android:gravity="center"
+                    <TextView android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, I am a TextView" />-->
+
+    <LinearLayout
+        android:layout_width="384px"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="420px"
+            android:background="@color/yellow">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="860px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="192px"
+                android:layout_height="match_parent"
+                android:background="@color/red">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="192px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500px"
+                    android:background="@color/blue">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="360px"
+                    android:background="@color/yellow">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="384px"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="420px"
+            android:background="@color/green"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="860px"
+            android:background="@color/orange"></LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

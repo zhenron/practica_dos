@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <TextView android:id="@+id/textVid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="@string/cero"/>
+
+
+    <EditText
+        android:id="@+id/editTnum1id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:hint="@string/num1"
+        android:inputType="number"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioBsumid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="+"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioBresid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="-"/>
+
+        <RadioButton
+            android:id="@+id/radioBmulid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="x"/>
+
+        <RadioButton
+            android:id="@+id/radioBdivid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="/"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTnum2id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:hint="@string/num2"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/buttonCalcid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        android:textSize="30dp"/>
+
+</LinearLayout>

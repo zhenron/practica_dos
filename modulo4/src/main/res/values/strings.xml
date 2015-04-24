@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Modulo4</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lado">lado: </string>
+    <string name="getlado">indroduzca el lado</string>
+    <string name="radio">radio: </string>
+    <string name="getradio">indroduzca el radio</string>
+    <string name="base">base: </string>
+    <string name="getbase">indroduzca la base</string>
+    <string name="alt">altura: </string>
+    <string name="getalt">indroduzca la altura</string>
+    <string name="msj">Calculador de área</string>
+    <string name="calcular">calcular</string>
+    <string name="res">Resultado: </string>
+</resources>

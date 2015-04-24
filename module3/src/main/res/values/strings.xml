@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Module3</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="quiz">Quices:</string>
+    <string name="getquiz">digite nota quices</string>
+    <string name="exp">Exposiciones:</string>
+    <string name="getexp">digite nota exposiciones</string>
+    <string name="lab">Laboratorio:</string>
+    <string name="getlab">digite nota laboratorio</string>
+    <string name="proy">Proyecto:</string>
+    <string name="getproy">digite nota proyecto</string>
+    <string name="result">Nota Final:</string>
+    <string name="setresult">0.0</string>
+    <string name="calcular">calcular</string>
+</resources>
