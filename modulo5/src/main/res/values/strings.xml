@@ -13,6 +13,8 @@
     <string name="get_tel">Digite teléfono</string>
     <string name="ok">OK</string>
     <string name="sexo">Sexo: </string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
     <string name="city">Ciudad: </string>
     <string name="date">Fecha Nacimiento: </string>
     <string name="citys_prompt">Elija una ciudad</string>

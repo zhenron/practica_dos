@@ -3,121 +3,97 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/skyblue"
     android:gravity="center">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        style="@style/myViewStyle.LY">
 
         <TextView android:id="@+id/textVquizid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
+            style="@style/myViewStyle.TV"
             android:text="@string/quiz"/>
 
         <EditText
             android:id="@+id/editTquizid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="20dp"
-            android:hint="@string/getquiz"
-            android:inputType="numberDecimal"/>
+            style="@style/myViewStyle.ET"
+            android:hint="@string/getquiz"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        style="@style/myViewStyle.LY">
 
         <TextView android:id="@+id/textVexpid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
+            style="@style/myViewStyle.TV"
             android:text="@string/exp"/>
 
         <EditText
             android:id="@+id/editTexpid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="20dp"
-            android:hint="@string/getexp"
-            android:inputType="numberDecimal"/>
+            style="@style/myViewStyle.ET"
+            android:hint="@string/getexp"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        style="@style/myViewStyle.LY">
 
         <TextView android:id="@+id/textVlabid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
+            style="@style/myViewStyle.TV"
             android:text="@string/lab"/>
 
         <EditText
             android:id="@+id/editTlabid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="20dp"
-            android:hint="@string/getlab"
-            android:inputType="numberDecimal"/>
+            style="@style/myViewStyle.ET"
+            android:hint="@string/getlab"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        style="@style/myViewStyle.LY">
 
         <TextView android:id="@+id/textVproyid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
+            style="@style/myViewStyle.TV"
             android:text="@string/proy"/>
 
         <EditText
             android:id="@+id/editTproyid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="20dp"
-            android:hint="@string/getproy"
-            android:inputType="numberDecimal"/>
+            style="@style/myViewStyle.ET"
+            android:hint="@string/getproy"/>
 
     </LinearLayout>
 
     <Button
         android:id="@+id/buttonCalcid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/calcular"
-        android:textSize="30dp"/>
+        style="@style/myViewStyle.BT"
+        android:text="@string/calcular"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        style="@style/myViewStyle.LY">
 
         <TextView
             android:id="@+id/textVresid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
+            style="@style/myViewStyle.TV"
+            android:textSize="30sp"
             android:text="@string/result"/>
 
         <TextView
             android:id="@+id/textVsetresultid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/myViewStyle.TV"
             android:gravity="center"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:hint="@string/setresult"/>
+
 
     </LinearLayout>
 
-
-
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="AbrirAcercaDe"
+        />-->
 
 </LinearLayout>

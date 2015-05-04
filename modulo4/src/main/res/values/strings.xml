@@ -12,6 +12,10 @@
     <string name="alt">altura: </string>
     <string name="getalt">indroduzca la altura</string>
     <string name="msj">Calculador de área</string>
-    <string name="calcular">calcular</string>
+    <string name="calcular">CALCULAR</string>
     <string name="res">Resultado: </string>
+    <string name="square">Cuadrado</string>
+    <string name="circle">Círculo</string>
+    <string name="triangle">Triángulo</string>
+    <string name="rectangle">Rectángulo</string>
 </resources>

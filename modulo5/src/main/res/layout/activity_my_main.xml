@@ -1,266 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/orange"
+    android:orientation="vertical">
+
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"><!-- Ya viene por defecto horizontal -->
 
-        <!--    -->
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"><!-- Ya viene por defecto horizontal -->
+            android:text="@string/name"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/name"
-                android:textSize="30dp"
-                android:textColor="@color/orange"
-                />
-
-            <EditText
-                android:id="@+id/editTnameid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30dp"
-                android:hint="@string/get_name"
-                android:textColor="@color/blue"
-                android:inputType="text"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <EditText
+            android:id="@+id/editTnameid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"><!-- Ya viene por defecto horizontal -->
+            android:textSize="30sp"
+            android:hint="@string/get_name"
+            android:textColor="@color/blue"
+            android:inputType="text"
+            />
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/email"
-                android:textSize="30dp"
-                android:textColor="@color/orange"
-                />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"><!-- Ya viene por defecto horizontal -->
 
-            <EditText
-                android:id="@+id/editTemailid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30dp"
-                android:hint="@string/get_email"
-                android:textColor="@color/blue"
-                android:inputType="textEmailAddress"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"><!-- Ya viene por defecto horizontal -->
+            android:text="@string/email"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tel"
-                android:textSize="30dp"
-                android:textColor="@color/orange"
-                />
-
-            <EditText
-                android:id="@+id/editTtelid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30dp"
-                android:hint="@string/get_tel"
-                android:textColor="@color/blue"
-                android:inputType="phone"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sexo"
-                android:textSize="30sp"
-                android:textColor="@color/orange"/>
-
-            <RadioGroup
-                android:id="@+id/radioGid"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-                <RadioButton
-                    android:id="@+id/radioBhomid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:text="Hombre"
-                    android:checked="true"/>
-
-                <RadioButton
-                    android:id="@+id/radioBmujid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:text="Mujer"/>
-
-            </RadioGroup>
-        </LinearLayout>
-
-        <Spinner
-            android:id="@+id/spid"
+        <EditText
+            android:id="@+id/editTemailid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:prompt="@string/citys_prompt"
-            android:layout_gravity="center_horizontal"></Spinner>
-
-        <DatePicker
-            android:id="@+id/dpid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/btnChangeDateid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="cambiar fecha" />
-
-
-        <Button
-            android:id="@+id/butCargid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/ok"/>
-
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/name"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:id="@+id/textVnameid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"/>
-
-            </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/email"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:id="@+id/textVemailid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tel"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:id="@+id/textVtelid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sexo"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:id="@+id/textVsexoid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/city"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:id="@+id/textVcityid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/date"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:id="@+id/textVdateid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"/>
-
-        </LinearLayout>
+            android:textSize="30sp"
+            android:hint="@string/get_email"
+            android:textColor="@color/blue"
+            android:inputType="textEmailAddress"
+            />
 
     </LinearLayout>
-</ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"><!-- Ya viene por defecto horizontal -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tel"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/editTtelid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:hint="@string/get_tel"
+            android:textColor="@color/blue"
+            android:inputType="phone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sexo"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:id="@+id/radioGid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radioBhomid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="@string/hombre"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioBmujid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="@string/mujer"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butCargid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/ok"/>
+
+</LinearLayout>

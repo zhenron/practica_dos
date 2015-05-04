@@ -5,4 +5,28 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="myViewStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    
+    <style name="myViewStyle.TV"><item name="android:textColor">@color/darkred</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+    
+    <style name="myViewStyle.ET">
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="myViewStyleRadioButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
 </resources>

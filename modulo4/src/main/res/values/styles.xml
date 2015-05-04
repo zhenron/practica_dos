@@ -5,4 +5,46 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="myViewStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="myViewStyle.LYwrap">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/dord</item>
+    </style>
+
+    <style name="myViewStyle.LYmatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/dord</item>
+
+    </style>
+
+    <style name="myViewStyle.TV">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="myViewStyle.ET">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="myViewStyle.BT">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="myImageViewStyle">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
 </resources>

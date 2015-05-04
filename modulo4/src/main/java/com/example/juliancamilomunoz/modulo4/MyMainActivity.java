@@ -17,6 +17,7 @@ public class MyMainActivity extends ActionBarActivity {
     private Button btnCalc;
     private EditText editTlado, editTradio, editTbase, editTalt;
     private TextView textV;
+    private double result = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class MyMainActivity extends ActionBarActivity {
                 double radio = Double.parseDouble(editTradio.getText().toString());
                 double base = Double.parseDouble(editTbase.getText().toString());
                 double alt = Double.parseDouble(editTalt.getText().toString());
-                double result = 0;
+                //double result = 0;
 
                 switch(radioOpGroup.getCheckedRadioButtonId())
                 {
@@ -74,11 +75,23 @@ public class MyMainActivity extends ActionBarActivity {
 
                 }
 
-                textV.setText(Double.toString(result));
+                textV.setText(String.format("%.2f", result));
 
             }
         });
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle guardarEstado) {
+        super.onSaveInstanceState(guardarEstado);
+        guardarEstado.putDouble("myresult", result);
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle recEstado) {
+        super.onRestoreInstanceState(recEstado);
+        result = recEstado.getDouble("myresult");
+        //textV.setText(Double.toString(result));
+        textV.setText(String.format("%.2f", result));
+    }
 }

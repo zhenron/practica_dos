@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Abouut"
+            android:label="@string/title_activity_abouut"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Porcentajes"
+            android:label="@string/title_activity_porcentajes" >
+        </activity>
     </application>
 
 </manifest>

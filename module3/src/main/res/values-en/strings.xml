@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Module3</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="quiz">Quizzes: </string>
+    <string name="getquiz">type quizzes grade</string>
+    <string name="exp">Expositions:</string>
+    <string name="getexp">type expositions grade</string>
+    <string name="lab">Practices:</string>
+    <string name="getlab">type practices grade</string>
+    <string name="proy">Project:</string>
+    <string name="getproy">type the project grade</string>
+    <string name="result">Final grade:</string>
+    <string name="setresult">0.0</string>
+    <string name="calcular">calculate</string>
+</resources>

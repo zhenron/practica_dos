@@ -3,77 +3,62 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/khaki"
     android:gravity="center">
 
 
     <TextView android:id="@+id/textVid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="50dp"
+        style="@style/myViewStyle.TV"
         android:text="@string/cero"/>
 
 
     <EditText
         android:id="@+id/editTnum1id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:hint="@string/num1"
-        android:inputType="number"/>
+        style="@style/myViewStyle.ET"
+        android:hint="@string/num1"/>
 
 
     <RadioGroup
         android:id="@+id/radioGid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        style="@style/myViewStyle"
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/radioBsumid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
+            style="@style/myViewStyleRadioButton"
             android:text="+"
             android:checked="true"/>
 
         <RadioButton
             android:id="@+id/radioBresid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
+            style="@style/myViewStyleRadioButton"
             android:text="-"/>
 
         <RadioButton
             android:id="@+id/radioBmulid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
+            style="@style/myViewStyleRadioButton"
             android:text="x"/>
 
         <RadioButton
             android:id="@+id/radioBdivid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
+            style="@style/myViewStyleRadioButton"
             android:text="/"/>
     </RadioGroup>
 
     <EditText
         android:id="@+id/editTnum2id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:hint="@string/num2"
-        android:inputType="number"/>
+        style="@style/myViewStyle.ET"
+        android:hint="@string/num2"/>
 
     <Button
         android:id="@+id/buttonCalcid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/myViewStyle"
         android:text="@string/calcular"
-        android:textSize="30dp"/>
+        android:textSize="30sp"
+        android:background="@color/burlywood"/>
 
 </LinearLayout>

@@ -2,6 +2,7 @@
     <string name="app_name">Module3</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="my_hello">Hello there</string>
     <string name="action_settings">Settings</string>
     <string name="quiz">Quices:</string>
     <string name="getquiz">digite nota quices</string>
@@ -13,5 +14,10 @@
     <string name="getproy">digite nota proyecto</string>
     <string name="result">Nota Final:</string>
     <string name="setresult">0.0</string>
-    <string name="calcular">calcular</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="TOnCreate">Estamos en OnCreate</string>
+    <string name="title_activity_abouut">Abouut</string>
+    <string name="about">About</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string name="title_activity_porcentajes">Porcentajes</string>
 </resources>

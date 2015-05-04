@@ -19,6 +19,7 @@ public class Calculadora extends ActionBarActivity {
     private Button btnCalc;
     private EditText editTnum1, editTnum2;
     private TextView textV;
+    int result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +47,7 @@ public class Calculadora extends ActionBarActivity {
 
                 int v1 = Integer.parseInt(editTnum1.getText().toString());
                 int v2 = Integer.parseInt(editTnum2.getText().toString());
-                int result;
+                //int result;
 
                 switch (radioOpGroup.getCheckedRadioButtonId()) {
                     case R.id.radioBsumid:
@@ -77,4 +78,16 @@ public class Calculadora extends ActionBarActivity {
         });
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle guardarEstado) {
+        super.onSaveInstanceState(guardarEstado);
+        guardarEstado.putInt("myresult", result);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle recEstado) {
+        super.onRestoreInstanceState(recEstado);
+        result = recEstado.getInt("myresult");
+        textV.setText(Integer.toString(result));
+    }
 }
